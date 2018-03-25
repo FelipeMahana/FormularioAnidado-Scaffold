@@ -1,0 +1,6 @@
+<h3>Editar comentario:</h3>
+<%= form_with(model: [@post, @comment], local: true) do |form| %>
+	<%= form.label :content %>
+    <%= form.text_area :content %><br>
+    <%= form.submit 'Editar' %>
+<% end %>
